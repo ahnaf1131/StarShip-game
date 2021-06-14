@@ -6,10 +6,6 @@ let devW=window.innerWidth
 
 
 
-
-
-
-
 let bubbles=[]
 
 
@@ -33,7 +29,6 @@ function setup(){
 }
 function draw(){
     background(20,100,200)
-    frameRate(3)
     for(let i=0;i<bubbles.length;i++){
         bubbles[i].moveDown()
         bubbles[i].show()
@@ -59,7 +54,7 @@ class Star{
 
     }
     moveDown(){
-        this.y = this.y +10
+        this.y = this.y +.5
         
     }
     show() {
@@ -68,7 +63,3 @@ class Star{
         ellipse(this.x, this.y, this.r);
       }
 }
-
-
-
-
